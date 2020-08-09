@@ -1,0 +1,5 @@
+安装gopm     go get -u github.com/gpmgo/gopm
+gopm get -g -v golang.org/x/text
+
+go module 使用
+require golang.org/x/text latest

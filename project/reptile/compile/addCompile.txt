@@ -1,0 +1,98 @@
+"".div STEXT nosplit size=25 args=0x18 locals=0x0
+	0x0000 00000 (add.go:5)	TEXT	"".div(SB), NOSPLIT|ABIInternal, $0-24
+	0x0000 00000 (add.go:5)	PCDATA	$0, $-2
+	0x0000 00000 (add.go:5)	PCDATA	$1, $-2
+	0x0000 00000 (add.go:5)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (add.go:5)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (add.go:5)	FUNCDATA	$2, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (add.go:5)	PCDATA	$0, $0
+	0x0000 00000 (add.go:5)	PCDATA	$1, $0
+	0x0000 00000 (add.go:5)	MOVQ	$0, "".~r2+24(SP)
+	0x0009 00009 (add.go:6)	MOVQ	"".a+8(SP), AX
+	0x000e 00014 (add.go:6)	SUBQ	"".b+16(SP), AX
+	0x0013 00019 (add.go:6)	MOVQ	AX, "".~r2+24(SP)
+	0x0018 00024 (add.go:6)	RET
+	0x0000 48 c7 44 24 18 00 00 00 00 48 8b 44 24 08 48 2b  H.D$.....H.D$.H+
+	0x0010 44 24 10 48 89 44 24 18 c3                       D$.H.D$..
+"".main STEXT size=68 args=0x0 locals=0x20
+	0x0000 00000 (add.go:9)	TEXT	"".main(SB), ABIInternal, $32-0
+	0x0000 00000 (add.go:9)	MOVQ	(TLS), CX
+	0x0009 00009 (add.go:9)	CMPQ	SP, 16(CX)
+	0x000d 00013 (add.go:9)	PCDATA	$0, $-2
+	0x000d 00013 (add.go:9)	JLS	61
+	0x000f 00015 (add.go:9)	PCDATA	$0, $-1
+	0x000f 00015 (add.go:9)	SUBQ	$32, SP
+	0x0013 00019 (add.go:9)	MOVQ	BP, 24(SP)
+	0x0018 00024 (add.go:9)	LEAQ	24(SP), BP
+	0x001d 00029 (add.go:9)	PCDATA	$0, $-2
+	0x001d 00029 (add.go:9)	PCDATA	$1, $-2
+	0x001d 00029 (add.go:9)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001d 00029 (add.go:9)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001d 00029 (add.go:9)	FUNCDATA	$2, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001d 00029 (add.go:10)	PCDATA	$0, $0
+	0x001d 00029 (add.go:10)	PCDATA	$1, $0
+	0x001d 00029 (add.go:10)	MOVQ	$8, (SP)
+	0x0025 00037 (add.go:10)	MOVQ	$1, 8(SP)
+	0x002e 00046 (add.go:10)	CALL	"".div(SB)
+	0x0033 00051 (add.go:11)	MOVQ	24(SP), BP
+	0x0038 00056 (add.go:11)	ADDQ	$32, SP
+	0x003c 00060 (add.go:11)	RET
+	0x003d 00061 (add.go:11)	NOP
+	0x003d 00061 (add.go:9)	PCDATA	$1, $-1
+	0x003d 00061 (add.go:9)	PCDATA	$0, $-2
+	0x003d 00061 (add.go:9)	CALL	runtime.morestack_noctxt(SB)
+	0x0042 00066 (add.go:9)	PCDATA	$0, $-1
+	0x0042 00066 (add.go:9)	JMP	0
+	0x0000 65 48 8b 0c 25 00 00 00 00 48 3b 61 10 76 2e 48  eH..%....H;a.v.H
+	0x0010 83 ec 20 48 89 6c 24 18 48 8d 6c 24 18 48 c7 04  .. H.l$.H.l$.H..
+	0x0020 24 08 00 00 00 48 c7 44 24 08 01 00 00 00 e8 00  $....H.D$.......
+	0x0030 00 00 00 48 8b 6c 24 18 48 83 c4 20 c3 e8 00 00  ...H.l$.H.. ....
+	0x0040 00 00 eb bc                                      ....
+	rel 5+4 t=17 TLS+0
+	rel 47+4 t=8 "".div+0
+	rel 62+4 t=8 runtime.morestack_noctxt+0
+go.cuinfo.packagename. SDWARFINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+go.loc."".div SDWARFLOC size=0
+go.info."".div SDWARFINFO size=69
+	0x0000 03 22 22 2e 64 69 76 00 00 00 00 00 00 00 00 00  ."".div.........
+	0x0010 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0f  ................
+	0x0020 61 00 00 05 00 00 00 00 01 9c 0f 62 00 00 05 00  a..........b....
+	0x0030 00 00 00 02 91 08 0f 7e 72 32 00 01 05 00 00 00  .......~r2......
+	0x0040 00 02 91 10 00                                   .....
+	rel 0+0 t=24 type.int+0
+	rel 8+8 t=1 "".div+0
+	rel 16+8 t=1 "".div+25
+	rel 26+4 t=30 gofile../Users/magicLuoMacBook/software/go/projects/reptile/learning.fufeng.com/project/reptile/compile/add.go+0
+	rel 36+4 t=29 go.info.int+0
+	rel 47+4 t=29 go.info.int+0
+	rel 61+4 t=29 go.info.int+0
+go.range."".div SDWARFRANGE size=0
+go.debuglines."".div SDWARFMISC size=12
+	0x0000 04 02 13 6a 06 41 04 01 03 7b 06 01              ...j.A...{..
+go.loc."".main SDWARFLOC size=0
+go.info."".main SDWARFINFO size=33
+	0x0000 03 22 22 2e 6d 61 69 6e 00 00 00 00 00 00 00 00  ."".main........
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 00                                               .
+	rel 9+8 t=1 "".main+0
+	rel 17+8 t=1 "".main+68
+	rel 27+4 t=30 gofile../Users/magicLuoMacBook/software/go/projects/reptile/learning.fufeng.com/project/reptile/compile/add.go+0
+go.range."".main SDWARFRANGE size=0
+go.debuglines."".main SDWARFMISC size=18
+	0x0000 04 02 03 03 14 0a a5 9c 06 5f 06 9c 71 04 01 03  ........._..q...
+	0x0010 78 01                                            x.
+""..inittask SNOPTRDATA size=24
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00                          ........
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+
+
+main 函数通过 SUBQ $40, SP 指令一共在栈上分配了 40 字节的内存空间：
+
+空间	大小	作用
+SP+32 ~ BP	8 字节	main 函数的栈基址指针
+SP+16 ~ SP+32	16 字节	函数 myFunction 的两个返回值
+SP ~ SP+16	16 字节	函数 myFunction 的两个参数
+myFunction 入参的压栈顺序和 C 语言一样，都是从右到左，即第一个参数 66 在栈顶的 SP ~ SP+8，第二个参数存储在 SP+8 ~ SP+16 的空间中。
